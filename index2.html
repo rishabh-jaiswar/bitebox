@@ -6,20 +6,63 @@
     
     <title>BiteBox</title>
 </head>
+<style>
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+nav #logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: aliceblue;
+}
+nav #logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+nav #menu{
+    display: flex;
+    align-items: center;
+}
+nav #menu ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+nav #menu ul a{
+    text-decoration: none;
+    
+     color:white;
+}
+nav #menu ul a:hover{
+   color: orangered;
+}
+</style>
 <body>
     <header>
        <nav>
-        <div name="header">
+        <div id="logo">
+            <img src="https://play-lh.googleusercontent.com/Mjvy1ghyURPWos84ptQHv79S9xLICmOCT-khpbG86Dxq-FR1NWSWfXIe_uUbCWWvdKOuMjgtYbxEXv6ebLB9_iI"  alt = "BiteBox" width = "200px" height = "200px">
             <h3>Bite Box</h3>
-            <img src="https://cnf-data-bucket-new.s3.eu-west-2.amazonaws.com/images/e0b676b2-5716-4fd4-a6a5-b0ed7b5debb2_large.jpg"  alt = "BiteBox" width = "200px" height = "200px">
-            <ul style="list-style: none;">
-            <li><a href="https://www.swiggy.com"> Home </a></li>
-            <li>About </li>
-            <li>Contact </li>
-            <li>About</li>
-            <li>Login </li>
-            </ul>
         </div>
+            <div id="menu">
+                <ul style="list-style: none;">
+            <li><a href="https://www.swiggy.com"> Home </a></li>
+            <li><a href="">About </a></li>
+            <li><a href="">Contact</a> </li>
+            <li><a href="">Sign Up</a></li>
+            <li><a href="">Login</a> </li>
+            </ul>
+            </div>
        </nav> 
     </header>
     <main></main>
